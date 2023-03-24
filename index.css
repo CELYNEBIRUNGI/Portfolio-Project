@@ -14,11 +14,7 @@ body {
   height: fit-content;
   border-radius: 16px;
   border: 1px solid #dfe1e6;
-  box-shadow: 2%px 15%;
-  
-
-
-  
+  box-shadow: 5px 10px;
 }
 
 .header {
@@ -44,7 +40,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 50px;
+  line-height: 0px;
   color: #6070ff;
 }
 
@@ -81,7 +77,6 @@ body {
   flex-direction: column;
   padding-bottom: 23%;
   font-family: "Inter", sans-serif;
-  
 }
 
 #socials {
@@ -140,7 +135,6 @@ body {
   font-style: normal;
   font-size: 75%;
   line-height: 24px;
-  
 }
 
 @media screen and (min-width: 408px) {
