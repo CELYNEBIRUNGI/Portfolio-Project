@@ -2,12 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
 
 body {
   max-width: 375px;
-  font-family: Poppins, sans-serif;
-  margin: 0;
-  background-color: #e5e5e5;
+  background-color: white;
+  margin-left: 5.5%;
+  margin-right: 5.5%;
+  margin-top: 0%;
+  margin-bottom: 25%;
+  height: fit-content;
+  border-radius: 16px;
+  border: 1px solid #dfe1e6;
+  box-shadow: 2%px 15%;
+  
+
+
+  
 }
 
 .header {
@@ -33,7 +44,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 20px;
+  line-height: 50px;
   color: #6070ff;
 }
 
@@ -65,10 +76,12 @@ body {
 
 #main {
   margin-right: 2%;
-  padding-top: 25px;
+  padding-top: 18%;
   display: flex;
   flex-direction: column;
   padding-bottom: 23%;
+  font-family: "Inter", sans-serif;
+  
 }
 
 #socials {
@@ -94,6 +107,40 @@ body {
 
 .icons {
   padding-right: 8%;
+}
+
+.connect {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7b86ece6;
+  font-style: normal;
+  padding-left: 6%;
+  margin-top: 2%;
+}
+
+.main-heading {
+  padding-left: 6%;
+  padding-right: 12%;
+  margin-top: 21%;
+  margin-bottom: 0.5%;
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 40px;
+  font-style: normal;
+  line-height: 52px;
+}
+
+.main-paragraph {
+  padding-left: 6%;
+  margin-bottom: 1.5%;
+  margin-top: 2%;
+  color: #344563;
+  font-weight: 65%;
+  font-style: normal;
+  font-size: 75%;
+  line-height: 24px;
+  
 }
 
 @media screen and (min-width: 408px) {
