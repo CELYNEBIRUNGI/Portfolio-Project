@@ -7,10 +7,6 @@
 body {
   max-width: 375px;
   background-color: white;
-  margin-left: 5.5%;
-  margin-right: 5.5%;
-  margin-top: 0%;
-  margin-bottom: 25%;
   height: fit-content;
   border-radius: 16px;
   border: 1px solid #dfe1e6;
@@ -105,7 +101,7 @@ body {
 }
 
 .connect {
-  font-weight: 500;
+  font-weight: 500px;
   font-size: 16px;
   line-height: 24px;
   color: #7b86ece6;
@@ -115,23 +111,21 @@ body {
 }
 
 .main-heading {
-  padding-left: 6%;
+  padding-left: 75%;
   padding-right: 12%;
-  margin-top: 21%;
-  margin-bottom: 0.5%;
-  color: #172b4d;
-  font-weight: 700;
-  font-size: 40px;
+  margin-top:0;
+  color: #115ae1cb;
+  font-weight: 7%;
+  font-size: 80%;
   font-style: normal;
   line-height: 52px;
 }
 
 .main-paragraph {
-  padding-left: 6%;
-  margin-bottom: 1.5%;
-  margin-top: 2%;
+  padding-left: 2%;
+  margin-bottom: 0.5%;
   color: #344563;
-  font-weight: 65%;
+  font-weight: 7%;
   font-style: normal;
   font-size: 75%;
   line-height: 24px;
