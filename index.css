@@ -13,7 +13,7 @@ body {
 }
 
 #home-page {
-  background-image: url("../images/header\ shapes.png");
+  background-image: url("images/background.png");
   padding: 0%;
   margin: 0%;
   background-repeat: no-repeat;
@@ -72,7 +72,7 @@ body {
   display: flex;
   align-items: center;
 }
-end
+
 .social-media-list {
   list-style: none;
   padding-left: 0%;
@@ -89,4 +89,10 @@ end
 
 .icons {
   padding-right: 8%;
+}
+
+@media screen and (min-width: 408px) {
+  nav .nav-item {
+    margin-right: 50px;
+  }
 }
