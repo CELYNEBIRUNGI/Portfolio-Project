@@ -7,10 +7,13 @@
 body {
   max-width: 420px;
   background-color: white;
-  height: fit-content;
   border-radius: 1px;
   border: 1px solid #dfe1e6;
   box-shadow: 2px 3px;
+  position: absolute;
+  width: 1440px;
+  height: 916px;
+  top: 1px;
 }
 
 .header {
@@ -110,15 +113,6 @@ body {
   bottom: 87.08%;
 }
 
-.connect {
-  font-family: 'Poppins'sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  text-decoration: none;
-}
-
 .main-heading {
   font-family: 'Poppins'sans-serif;
   font-style: normal;
@@ -143,6 +137,17 @@ body {
   height: 7%;
   padding-left: 2%;
   letter-spacing: 0.37px;
+}
+
+.connect {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  font-style: normal;
+  padding-left: 6%;
+  margin-top: 2%;
+  text-decoration: none;
 }
 
 @media screen and (min-device-width: 375px)and (max-device-width: 768px) {
