@@ -11,7 +11,6 @@ body {
   border-radius: 1px;
   border: 1px solid #dfe1e6;
   box-shadow: 2px 3px;
-  overflow-x: hidden;
 }
 
 .header {
@@ -114,12 +113,10 @@ body {
 .connect {
   font-family: 'Poppins'sans-serif;
   font-style: normal;
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  padding-left: 10%;
-  margin-top: 2%;
-  color: #7f8cff;
+  text-decoration: none;
 }
 
 .main-heading {
