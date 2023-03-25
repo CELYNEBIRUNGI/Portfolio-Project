@@ -5,12 +5,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
 
 body {
-  max-width: 375px;
+  max-width: 420px;
   background-color: white;
   height: fit-content;
-  border-radius: 16px;
+  border-radius: 1px;
   border: 1px solid #dfe1e6;
-  box-shadow: 5px 10px;
+  box-shadow: 2px 3px;
+  overflow-x: hidden;
 }
 
 .header {
@@ -18,6 +19,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.nav-hamburger {
+  align-items: flex-end;
+  justify-content: center;
+  margin-right: 120px;
 }
 
 #home-page {
@@ -98,40 +105,50 @@ body {
 
 .icons {
   padding-right: 8%;
+  left: 28.89%;
+  right: 70.13%;
+  top: 12.53%;
+  bottom: 87.08%;
 }
 
 .connect {
+  font-family: 'Poppins'sans-serif;
+  font-style: normal;
   font-weight: 500px;
   font-size: 16px;
   line-height: 24px;
-  color: #7b86ece6;
-  font-style: normal;
   padding-left: 10%;
   margin-top: 2%;
+  color: #7f8cff;
 }
 
 .main-heading {
-  padding-left: 75%;
-  padding-right: 12%;
-  margin-top: 0;
-  color: #115ae1cb;
-  font-weight: 7%;
-  font-size: 80%;
+  font-family: 'Poppins'sans-serif;
   font-style: normal;
-  line-height: 52px;
+  font-weight: 700px;
+  font-size: 48px;
+  line-height: 60px;
+  align-items: center;
+  color: #091e42;
+  display: flex;
+  letter-spacing: 0.37px;
 }
 
 .main-paragraph {
-  padding-left: 2%;
-  margin-bottom: 0.5%;
-  color: #344563;
-  font-weight: 7%;
+  font-family: 'Poppins'sans-serif;
   font-style: normal;
-  font-size: 75%;
-  line-height: 24px;
+  font-weight: 400px;
+  font-size: 20px;
+  line-height: 28px;
+  color: #344563;
+  flex: none;
+  width: 420px;
+  height: 7%;
+  padding-left: 2%;
+  letter-spacing: 0.37px;
 }
 
-@media screen and (min-width: 408px) {
+@media screen and (min-device-width: 375px)and (max-device-width: 768px) {
   nav .nav-item {
     margin-right: 50px;
   }
