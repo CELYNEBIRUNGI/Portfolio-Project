@@ -61,11 +61,12 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Portfolio Project] <a name="about-project"></a>
+# 📖 Portfolio Project <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
 
-**[Portfolio Project]** This is a portifilo webpage
+**Portfolio Project** >
+> This is a my portfolio webpage where i upload my recent projects that am working on
+
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -93,17 +94,14 @@ css
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
 
-- [Live Demo Link](https://google.com)
+- Comming soon
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
-
 
 
 ### Prerequisites
@@ -126,7 +124,7 @@ Clone this repository to your desired folder:
  commands:
 
 ```sh
-  cd my-folder
+  cd [your folder]
   git clone git@github.com/CELYNEBIRUNGI/Portfolio-Project
 ```
 
@@ -135,13 +133,7 @@ Clone this repository to your desired folder:
 
 Install this project with:
 
-
-Example command:
-
-```sh
-  cd my-project
-  gem npm i
-```
+- Just open the `index.html` file
 
 
 ### Usage
@@ -149,9 +141,7 @@ open index.html in your brower
 
 
 ### Run tests
-
-To run tests, run the following command:
-npx stylelint "**/*.{css,scss}"
+- No tests yet
 
  
 ### Deployment
@@ -225,6 +215,5 @@ I would like to thank my code reviewer have guiding me to produce required resul
 
 This project is [MIT](MIT.md) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
 body {
   max-width: 375px;
-  font-family: 'inter' sans-serif;
+  font-family: Poppins, sans-serif;
   margin: 0;
   background-color: #e5e5e5;
 }
@@ -10,6 +16,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.nav-hamburger {
+  align-items: flex-end;
+  justify-content: center;
+  margin-right: 120px;
 }
 
 #home-page {
@@ -28,7 +40,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 20px;
+  line-height: 0px;
   color: #6070ff;
 }
 
@@ -60,10 +72,11 @@ body {
 
 #main {
   margin-right: 2%;
-  padding-top: 25px;
+  padding-top: 18%;
   display: flex;
   flex-direction: column;
   padding-bottom: 23%;
+  font-family: "Inter", sans-serif;
 }
 
 #socials {
@@ -89,10 +102,50 @@ body {
 
 .icons {
   padding-right: 8%;
+  left: 28.89%;
+  right: 70.13%;
+  top: 12.53%;
+  bottom: 87.08%;
 }
 
+.main-heading {
+  font-family: 'Poppins'sans-serif;
+  font-style: normal;
+  font-weight: 700px;
+  font-size: 48px;
+  line-height: 60px;
+  align-items: center;
+  color: #091e42;
+  display: flex;
+  letter-spacing: 0.37px;
+}
 
-@media screen and (min-device-width: 375px)and (max-device-width: 768px) {
+.main-paragraph {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 400px;
+  font-size: 20px;
+  line-height: 28px;
+  color: #344563;
+  flex: none;
+  width: 420px;
+  height: 7%;
+  padding-left: 2%;
+  letter-spacing: 0.37px;
+}
+
+.connect {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  font-style: normal;
+  padding-left: 6%;
+  margin-top: 2%;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 408px) {
   nav .nav-item {
     margin-right: 50px;
   }
