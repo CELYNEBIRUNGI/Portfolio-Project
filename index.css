@@ -1,6 +1,6 @@
 body {
   max-width: 375px;
-  font-family: Poppins, sans-serif;
+  font-family: 'inter' sans-serif;
   margin: 0;
   background-color: #e5e5e5;
 }
@@ -91,8 +91,10 @@ body {
   padding-right: 8%;
 }
 
-@media screen and (min-width: 408px) {
+
+@media screen and (min-device-width: 375px)and (max-device-width: 768px) {
   nav .nav-item {
     margin-right: 50px;
   }
 }
+
