@@ -12,10 +12,7 @@ body {
   box-shadow: 1px 1px;
   position: absolute;
   margin: 0;
-  font-family: 'Poppins' sans-serif;
-  
-  
-  
+  font-family: Poppins, sans-serif;
 }
 
 .header {
@@ -403,7 +400,6 @@ body {
   margin-left: -4%;
   background-color: #dfe1e6;
 }
-
 
 @media screen and (min-device-width: 375px)and (max-device-width: 768px) {
   nav .nav-item {
