@@ -156,6 +156,7 @@ body {
   display: flex;
   flex-direction: column;
   padding-bottom: 23%;
+  font-family: "Inter", sans-serif;
 }
 
 #works-grid {
