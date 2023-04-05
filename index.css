@@ -148,8 +148,8 @@ body {
   line-height: 30px;
   flex: none;
   flex-grow: 0;
-  width: 920px;
-  height: 98px;
+  width: 820px;
+  height: 100px;
 }
 
 #works-grid {
@@ -249,7 +249,6 @@ body {
 .works-list {
   list-style: none;
   padding-left: 0%;
-  width: 100%;
   margin-top: 1%;
   display: flex;
   flex-direction: row;
@@ -257,18 +256,19 @@ body {
 }
 
 .works-list li {
-  display: inline-block;
-  justify-content: center;
-  padding: 4px 12px;
-  margin-right: 2.5%;
-  border-radius: 8px;
+  margin-right: 2%;
+  border-radius: 7px;
   background: #ebebff;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 500px;
   font-size: 12px;
   line-height: 16px;
   color: #6070ff;
   letter-spacing: 0.03em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 12px;
 }
 
 .works-button {
@@ -346,6 +346,8 @@ body {
   color: #344563;
   margin-right: 11%;
   padding-left: 7%;
+  width: 520px;
+  height: 98px;
 }
 
 .about-button {
@@ -375,7 +377,7 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  color: #000;
+  color: #344563;
   margin-left: -1%;
   letter-spacing: 0.03em;
 }
@@ -403,9 +405,11 @@ body {
 
 .languages-container-inner {
   background-color: #f7f7f9;
-  padding: 6%;
+  padding-left: 7%;
   margin: 3% 9% 1% -3%;
   border-radius: 12px;
+  width: 50px;
+  height: 80px;
 }
 
 .language-image {
@@ -414,13 +418,13 @@ body {
 
 .language-text {
   position: relative;
-  float: left;
+  float: right;
   margin-left: 7%;
   margin-top: 5%;
   color: #253858;
   font-style: normal;
   font-weight: 520;
-  font-size: 17px;
+  font-size: 12px;
   line-height: 20px;
 }
 
@@ -555,10 +559,11 @@ body {
   }
 
   .img-container-desktop {
-    width: 50%;
+    width: 450px;
+    height: 440px;
     display: flex;
     float: left;
-    margin-left: 5%;
+    margin-left: 3%;
     margin-top: 2.5%;
     margin-bottom: 2.5%;
     margin-right: 0%;
@@ -570,22 +575,9 @@ body {
     margin-left: 0%;
     margin-top: 2.5%;
     margin-bottom: 2.5%;
-    margin-right: 5%;
-    width: 580px;
-    height: 480px;
-    left: 590px;
-    top: 24px;
-  }
-
-  .img-container-desktop3 {
-    display: flex;
-    float: left;
-    margin-left: 5%;
-    margin-top: 2.5%;
-    margin-bottom: 0.5%;
-    margin-right: 5%;
-    width: 580px;
-    height: 480px;
+    margin-right: 3%;
+    width: 390px;
+    height: 380px;
     left: 590px;
     top: 24px;
   }
@@ -657,7 +649,7 @@ body {
   .inner-container {
     width: 50%;
     padding-top: 15%;
-    padding-right: 0%;
+    padding-right: 10%;
   }
 
   .about-languages {
@@ -675,15 +667,6 @@ body {
 
   .language-text {
     margin-top: 15%;
-    margin-left: 0%;
-  }
-
-  .languages-container-inner {
-    padding: 10%;
-  }
-
-  .language-image {
-    margin-top: -12%;
     margin-left: 0%;
   }
 
