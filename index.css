@@ -200,6 +200,10 @@ body {
   margin-top: 5%;
 }
 
+.img-container:hover {
+  transform: scale(0.8);
+}
+
 .img-container-desktop {
   display: none;
 }
