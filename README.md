@@ -148,8 +148,10 @@ open index.html in your brower
 ### Deployment
 
 You can deploy this project using:
+-Github: [@githubpages]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- AUTHORS -->
 
