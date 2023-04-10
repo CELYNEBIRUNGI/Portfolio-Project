@@ -94,7 +94,6 @@ css
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-<a href="https://celynebirungi.github.io/Portfolio-Project/"> Here is a link to the live demo of my project<a><br>
 
 
 - Comming soon
@@ -147,8 +146,9 @@ open index.html in your brower
 
  
 ### Deployment
- You can deploy this project using:
-    -Git hub:[@github][https://celynebirungi.github.io/Portfolio-Project/]
+
+You can deploy this project using:
+-Github: [@githubpages]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -220,6 +220,3 @@ This project is [MIT](MIT.md) licensed.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-[def]: https://celynebirungi.github.io/Portfolio-Project/
