@@ -35,6 +35,8 @@ body {
   font-size: 18px;
   line-height: 20px;
   color: #6070ff;
+  transform: rotate(360deg);
+  transition-duration: 4s;
 }
 
 #background {
@@ -586,6 +588,14 @@ body {
     top: 24px;
   }
 
+  .img-container-desktop:hover {
+    transform: scale(0.8);
+  }
+
+  .img-container-dp:hover {
+    transform: scale(0.8);
+  }
+
   .desktop-image {
     max-width: 100%;
   }
@@ -738,5 +748,9 @@ body {
 
   .works-button {
     width: 55%;
+  }
+
+  .bottom-divider {
+    height: 0%;
   }
 }
