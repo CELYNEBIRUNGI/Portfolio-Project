@@ -94,7 +94,7 @@ css
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-<a href="https://celynebirungi.github.io/Portfolio-Project/"> Here is a link to the live demo of my project<a><br>
+<a href="https://celynebirungi.github.io/Portfolio-Project/"> Here is a link to the live demo of my portifolio<a><br>
 
 
 - Comming soon
