@@ -150,8 +150,6 @@ body {
   line-height: 30px;
   flex: none;
   flex-grow: 0;
-  width: 820px;
-  height: 100px;
 }
 
 #works-grid {
@@ -352,8 +350,6 @@ body {
   color: #344563;
   margin-right: 11%;
   padding-left: 7%;
-  width: 520px;
-  height: 98px;
 }
 
 .about-button {
