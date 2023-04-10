@@ -201,7 +201,7 @@ body {
 }
 
 .img-container:hover {
-  transform: scale(0.8);
+  transform: scale(0.9);
 }
 
 .img-container-desktop {
@@ -291,11 +291,11 @@ body {
   letter-spacing: 0.03em;
   color: #396df2;
 }
-
+g
 .facebook-button {
   margin-top: 5%;
   width: 45%;
-  background-color: #4053fc;
+  background-color: #1528d5;
   border: 1px solid #4053fc;
   border-radius: 6px;
   padding: 16px;
