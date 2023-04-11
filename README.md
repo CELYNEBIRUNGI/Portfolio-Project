@@ -94,7 +94,6 @@ css
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-<a href="https://celynebirungi.github.io/Portfolio-Project/"> Here is a link to the live demo of my portifolio<a><br>
 
 
 - Comming soon
@@ -147,22 +146,28 @@ open index.html in your brower
 
  
 ### Deployment
- You can deploy this project using:
-    -Git hub:[@github][https://celynebirungi.github.io/Portfolio-Project/]
+
+You can deploy this project using:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
 
 **Evelyne Celyne Birungi
+**Hussein Hushi
 
 👤 **Author1**
 
 - GitHub: [@githubhandle](https://github.com/CELYNEBIRUNGI)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/evelyne-celyne-birungi-7b3178164/)
+
+👤 **Author2**
+
+- GitHub: [@githubhandle](https://github.com/husush23)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/hussein-kadare-8aa1361a8/)
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -171,11 +176,8 @@ open index.html in your brower
 
 ## 🔭 Future Features <a name="future-features"></a>
 
+- [ ] **[Portfolio-project]**
 
-
-- [ ] **[contactpage]**
-- [ ] **[buttons]**
-- [ ] **[personalprojects]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -220,6 +222,3 @@ This project is [MIT](MIT.md) licensed.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-[def]: https://celynebirungi.github.io/Portfolio-Project/
