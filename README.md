@@ -166,9 +166,8 @@ You can deploy this project using:
 👤 **Author2**
 
 - GitHub: [@githubhandle](https://github.com/husush23)
+- Twitter: [@twitterhandle](https://twitter.com/HusseinKadare2)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/hussein-kadare-8aa1361a8/)
-
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
