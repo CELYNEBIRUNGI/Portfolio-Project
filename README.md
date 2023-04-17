@@ -79,6 +79,8 @@ css
   <ul>
     <li><a href="#">HTML</a></li>
      <li><a href="#">CSS</a></li>
+     <li><a href="#">Javascript</a></li>
+     
   </ul>
 </details>
 
@@ -109,13 +111,9 @@ css
 
 In order to run this project you need:
 
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
+    A working Laptop
+    A code Editor
+    A browser
 
 ### Setup
 
@@ -134,20 +132,24 @@ Clone this repository to your desired folder:
 
 Install this project with:
 
-- Just open the `index.html` file
+-Run npm install
 
 
 ### Usage
-open index.html in your brower
+Open the project using VSCode live server or Open the index.html on your browser.
 
 
 ### Run tests
-- No tests yet
+- 
+    npx hint .
+    npx eslint .
+    npx stylelint "./css/style.css"
 
  
 ### Deployment
 
-You can deploy this project using:
+    This project is already deployed with github pages.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

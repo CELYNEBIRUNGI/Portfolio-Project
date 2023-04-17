@@ -11,13 +11,28 @@
  <body>
   </head>
 
+  
   <body>
-    <div id="home-page"> 
-      <header class="header">
-          <a href="#" class="logo">My Logo</a> 
-          <nav id="nav-hamburger">
-          <img src="images/nav.png">      
+   <div id="home-page">  
+  <header class="header">
+  <a href="#" class="logo">My Logo</a>
+  <nav id="nav-hamburger">
+  <a href="#" id="hamburger"><img src="images/nav.png"></a>
+    <div i d="mobilemenu" class="mobile-menu-inactive">
+    <div class="disabled-button"><a href="#"><img src="images/hamburger disable.png"></a></div>
+    <ul class="mobile-menu-list">
+      <li><a id="button1" class="mobile-menu-links" href="#main">Portfolio</a></li>
+     <li><a id="button2" class="mobile-menu-links" href="#about-myself">About</a></li>
+      <li><a id="button3" class="mobile-menu-links" href="#form">Contact</a></li>
+      </ul>
+        </div>        
+        </nav>
+        <nav id="desktop-nav">
+        <a href="#main" class="desktop-nav-link">Portfolio</a>
+        <a href="#about-myself" class="desktop-nav-link">About</a>
+        <a href="#form" class="desktop-nav-link">Contact</a>
           </nav>
+        </header>
       </header>
       <section id="main">
         <div>
@@ -214,7 +229,7 @@
     </footer> 
     <div class="bottom-divider"></div>   
   </div>
-  <script src="js/main.js"></script>
+  <script src="/js/main.js"></script>
 
   </body>
 </html>
