@@ -73,6 +73,36 @@ body {
   transition: opacity 0.5s, visibility 0.5s;
 }
 
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 8;
+  display: none;
+}
+
+.mobilemenu.mobile-menu-inactive {
+  display: block;
+}
+
+body.menu-active {
+  overflow: hidden;
+}
+
+body.menu-active::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(6px);
+  z-index: 7;
+}
+
 .mobile-menu-list {
   list-style: none;
   padding-top: 10%;
