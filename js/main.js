@@ -10,5 +10,4 @@ const handleClick = () => {
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('#hamburger').addEventListener('click', handleClick);
   document.querySelectorAll('.mobile-menu-links, .disabled-button').forEach((button) => button.addEventListener('click', handleClick));
-
 });
