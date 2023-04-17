@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('#mobilemenu').classList.add('mobile-menu-inactive');
     document.querySelector('#mobilemenu').classList.remove('mobile-menu');
   });
- 
+
   document.querySelector('#button2').addEventListener('click', () => {
     document.querySelector('#mobilemenu').classList.add('mobile-menu-inactive');
     document.querySelector('#mobilemenu').classList.remove('mobile-menu');
