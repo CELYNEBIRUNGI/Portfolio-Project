@@ -11,6 +11,10 @@ body {
   background-color: #e5e5e5;
 }
 
+#desktop-nav {
+  display: none;
+}
+
 .header {
   margin: 2% 6%;
   width: auto;
@@ -43,17 +47,8 @@ body {
   position: relative;
 }
 
-.nav-item {
-  text-decoration: none;
-  color: #344563;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-}
-
-#nav-hamburger {
-  padding-right: 5%;
+#nav-menu {
+  display: none;
 }
 
 .mobile-menu-inactive {
@@ -71,22 +66,54 @@ body {
   max-width: 767px;
   min-width: 375px;
   width: 100%;
-  height: 560px;
+  height: 100vh;
   background-color: #6070ff;
   opacity: 0.9;
   z-index: 9;
   transition: opacity 0.5s, visibility 0.5s;
 }
 
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 8;
+  display: none;
+}
+
+.mobilemenu.mobile-menu-inactive {
+  display: block;
+}
+
+body.menu-active {
+  overflow: hidden;
+}
+
+body.menu-active::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(6px);
+  z-index: 7;
+}
+
 .mobile-menu-list {
   list-style: none;
   padding-top: 10%;
+  display: inline-block;
 }
 
 .disabled-button {
   position: fixed;
   right: 0;
-  padding-right: 5%;
+  padding-top: 3%;
+  padding-right: 15%;
 }
 
 .mobile-menu-links {
@@ -95,24 +122,7 @@ body {
   font-weight: 600;
   font-size: 32px;
   line-height: 60px;
-  color: #4217ec;
-}
-
-#desktop-nav {
-  display: none;
-}
-
-#ham-icon {
-  width: 16px;
-  height: 5px;
-  background-color: #6070ff;
-  margin: 6px 0;
-}
-
-.ham-icon {
-  color: #6070ff;
-  font-size: 15px;
-  font-weight: 1000;
+  color: #fff;
 }
 
 #main {
