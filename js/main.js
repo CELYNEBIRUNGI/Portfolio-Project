@@ -1,8 +1,8 @@
 const handleClick = () => {
   const mobileNavMenu = document.querySelector('#mobilemenu');
   const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
-  mobileNavMenu.classList.toggle('mobile-menu-inactive');
-  mobileNavMenu.classList.toggle('mobile-menu');
+  hamburger.classList.toggle('mobile-menu-inactive');
+  hamburger.classList.toggle('mobile-menu');
   document.body.classList.toggle('menu-active');
   mobileMenuOverlay.classList.toggle('mobile-menu-overlay-active');
 };
@@ -29,5 +29,27 @@ document.addEventListener('DOMContentLoaded', () => {
       submitButton.insertAdjacentElement('afterend', errorMessage);
       event.preventDefault();
     }
+  });  
+  
+  window.addEventListener('beforeunload', () => {
+    const formdata = {
+      formname: '',
+      formemail: '',
+      formtext: '',
+    };
+
+    if ((!document.querySelector('#name').value) || document.querySelector('#name').value !== '') {
+      formdata.formname = document.querySelector('#name').value;
+    }
+    if ((!document.querySelector('#emailfield').value) || document.querySelector('#emailfield').value !== '') {
+      formdata.formemail = document.querySelector('#emailfield').value;
+    }
+    if ((!document.querySelector('#textfield').value) || document.querySelector('#textfield').value !== '') {
+      formdata.formtext = document.querySelector('#textfield').value;
+    }
+
+    JSON.stringify(formdata);
+    localStorage.setItem('formdata', JSON.stringify(formdata));
   });
+
 });
