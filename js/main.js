@@ -29,13 +29,14 @@ document.addEventListener('DOMContentLoaded', () => {
       submitButton.insertAdjacentElement('afterend', errorMessage);
       event.preventDefault();
     }
-    window.onload = () => {
+
+     window.onload = () => {
       if (localStorage) {
         const localStorageItem = localStorage.getItem('formdata');
         const formtoken = JSON.parse(localStorageItem);
-        document.getElementById('name').value = formtoken.formname;
-        document.getElementById('emailfield').value = formtoken.formemail;
-        document.getElementById('textfield').value = formtoken.formtext;
+        document.getElementById('Name').value = formtoken.formname;
+        document.getElementById('email').value = formtoken.formemail;
+        document.getElementById('form').value = formtoken.formtext;
       }
     };
 
@@ -46,19 +47,19 @@ document.addEventListener('DOMContentLoaded', () => {
         formtext: '',
       };
   
-      if ((!document.querySelector('#name').value) || document.querySelector('#name').value !== '') {
-        formdata.formname = document.querySelector('#name').value;
+      if ((!document.querySelector('#Name').value) || document.querySelector('#Name').value !== '') {
+        formdata.formname = document.querySelector('#Name').value;
       }
-      if ((!document.querySelector('#emailfield').value) || document.querySelector('#emailfield').value !== '') {
-        formdata.formemail = document.querySelector('#emailfield').value;
+      if ((!document.querySelector('#email-bOX').value) || document.querySelector('#email').value !== '') {
+        formdata.formemail = document.querySelector('#emaiL-box').value;
       }
-      if ((!document.querySelector('#textfield').value) || document.querySelector('#textfield').value !== '') {
+      if ((!document.querySelector('#form').value) || document.querySelector('#form').value !== '') {
         formdata.formtext = document.querySelector('#textfield').value;
       }
   
       JSON.stringify(formdata);
       localStorage.setItem('formdata', JSON.stringify(formdata));
     });
-    
+
   });
 });
