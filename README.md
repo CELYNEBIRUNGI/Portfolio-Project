@@ -87,7 +87,13 @@ css
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-   
+  
+*A portfolio website with enhanced look.**
+- **linters**
+- **Projects page**
+- **Git and Github**
+
+ 
 
 
 
@@ -160,12 +166,12 @@ Open the project using VSCode live server or Open the index.html on your browser
 **Evelyne Celyne Birungi
 **Hussein Hushi
 
-👤 **Author1**
+👤 **Evelyne Celyne Birungi**
 
 - GitHub: [@githubhandle](https://github.com/CELYNEBIRUNGI)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/evelyne-celyne-birungi-7b3178164/)
 
-👤 **Author2**
+👤 **Hussein Hushi**
 
 - GitHub: [@githubhandle](https://github.com/husush23)
 - Twitter: [@twitterhandle](https://twitter.com/HusseinKadare2)
