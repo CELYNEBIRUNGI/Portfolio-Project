@@ -597,6 +597,10 @@ body.menu-active::before {
   margin-bottom: 2%;
 }
 
+.error-message {
+  color: red;
+}
+
 @media screen and (min-width: 768px) {
   body {
     min-width: 768px;
@@ -775,6 +779,14 @@ body.menu-active::before {
   }
 
   .fields1 {
+    width: 100%;
+    padding: 2.5%;
+    border-radius: 3px;
+    margin-left: -4%;
+    margin-bottom: 5%;
+  }
+
+  .email-box {
     width: 100%;
     padding: 2.5%;
     border-radius: 3px;
