@@ -87,7 +87,12 @@ css
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-   
+  
+*A portfolio website with enhanced look.**
+- **linters**
+- **Projects page**
+
+ 
 
 
 
