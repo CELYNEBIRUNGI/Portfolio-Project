@@ -91,6 +91,7 @@ css
 *A portfolio website with enhanced look.**
 - **linters**
 - **Projects page**
+- **Git and Github**
 
  
 
