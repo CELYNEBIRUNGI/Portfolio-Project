@@ -1,34 +1,29 @@
-const handleClick = () => {
-  const mobileNavMenu = document.querySelector('#mobilemenu');
-  const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
-  mobileNavMenu.classList.toggle('mobile-menu-inactive');
-  mobileNavMenu.classList.toggle('mobile-menu');
-  document.body.classList.toggle('menu-active');
-  mobileMenuOverlay.classList.toggle('mobile-menu-overlay-active');
-};
-
+const i = 0;
 document.addEventListener('DOMContentLoaded', () => {
-  document.querySelector('#hamburger').addEventListener('click', handleClick);
-  document.querySelectorAll('.mobile-menu-links, .disabled-button').forEach((button) => button.addEventListener('click', handleClick));
-});
+  document.querySelector('#hamburger').addEventListener('click', () => {
+    document.querySelector('#mobilemenu').classList.remove('mobile-menu-inactive');
+    document.querySelector('#mobilemenu').classList.add('mobile-menu');
+  });
 
-const form = document.querySelector('#form');
-const submitButton = document.querySelector('.form-button');
+  document.querySelector('.disabled-button').addEventListener('click', () => {
+    document.querySelector('#mobilemenu').classList.add('mobile-menu-inactive');
+    document.querySelector('#mobilemenu').classList.remove('mobile-menu');
+  });
 
-form.addEventListener('submit', (event) => {
-  const emailInput = document.querySelector('.email-box');
-  const email = emailInput.value.trim();
-  if (email !== email.toLowerCase()) {
-    const errorMessage = document.createElement('p');
-    errorMessage.classList.add('error-message');
-    errorMessage.textContent = 'Email address must be in lowercase.';
-    const existingErrorMessage = submitButton.nextElementSibling;
-    if (existingErrorMessage && existingErrorMessage.classList.contains('error-message')) {
-      existingErrorMessage.remove();
-    }
-    submitButton.insertAdjacentElement('afterend', errorMessage);
-    event.preventDefault();
-  }
+  document.querySelector('#button1').addEventListener('click', () => {
+    document.querySelector('#mobilemenu').classList.add('mobile-menu-inactive');
+    document.querySelector('#mobilemenu').classList.remove('mobile-menu');
+  });
+
+  document.querySelector('#button2').addEventListener('click', () => {
+    document.querySelector('#mobilemenu').classList.add('mobile-menu-inactive');
+    document.querySelector('#mobilemenu').classList.remove('mobile-menu');
+  });
+
+  document.querySelector('#button3').addEventListener('click', () => {
+    document.querySelector('#mobilemenu').classList.add('mobile-menu-inactive');
+    document.querySelector('#mobilemenu').classList.remove('mobile-menu');
+  });
 
   window.onload = () => {
     if (localStorage) {
@@ -39,12 +34,14 @@ form.addEventListener('submit', (event) => {
       document.getElementById('textfield').value = formtoken.formtext;
     }
   };
+
   window.addEventListener('beforeunload', () => {
     const formdata = {
       formname: '',
       formemail: '',
       formtext: '',
     };
+
     if ((!document.querySelector('#name').value) || document.querySelector('#name').value !== '') {
       formdata.formname = document.querySelector('#name').value;
     }
@@ -54,7 +51,126 @@ form.addEventListener('submit', (event) => {
     if ((!document.querySelector('#textfield').value) || document.querySelector('#textfield').value !== '') {
       formdata.formtext = document.querySelector('#textfield').value;
     }
+
     JSON.stringify(formdata);
     localStorage.setItem('formdata', JSON.stringify(formdata));
+  });
+
+  const works = [
+    {
+      projectname: 'Tonic',
+      projectdescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      detaileddescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+      featuredimage: 'images/Snapshoot.png',
+      featuredimagedesktop: 'images/Snapshoot-Desktop1.png',
+      featuredimagepopup: 'images/Snapshoot Portfolio-popup.png',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      linklive: '#',
+      linksource: '#',
+    },
+    {
+      projectname: 'Multi Post Stories',
+      projectdescription: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+      detaileddescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+      featuredimage: 'images/Snapshoot2.png',
+      featuredimagedesktop: 'images/muilti.png',
+      featuredimagepopup: 'images/muilti.png',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      linklive: '#',
+      linksource: '#',
+    },
+    {
+      projectname: 'Facebook 360',
+      projectdescription: 'Exploring the future of media in Facebook  first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
+      detaileddescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+      featuredimage: 'images/Snapshoot3.png',
+      featuredimagedesktop: './images/Snapshoot.png',
+      featuredimagepopup: 'images/Snapshoot.png',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      linklive: '#',
+      linksource: '#',
+    },
+    {
+      projectname: 'Uber Navigation',
+      projectdescription: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+      detaileddescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+      featuredimage: 'images/Snapshoot4.png',
+      featuredimagedesktop: 'images/Snapshoot2.png ',
+      featuredimagepopup: 'images/Snapshoot2.png ',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      linklive: '#',
+      linksource: '#',
+    },
+  ];
+  const worksgrid = document.getElementById('works-grid');
+  let popupblock = `<div id="container-exist" class="project-container"><div class="project-text-section"><div class="popup-heading"><h2 class="works-heading">${works[i].projectname}</h2><a href="#" class="popup-cancel" id="closeproject"><img src="./images/assets/desktop-popup-cancel.png"></a></div><div class="works-frame"><label class="frame-text1">Canopy</label><div class="frame-counter"><img src="images/Counter.png"></div><label class="frame-text2">Back End Dev</label><div class="frame-counter"><img src="images/Counter.png"></div><label class="frame-text2">2015</label></div><div class="img-container"><img class ="mobile-popup-image" src="${works[i].featuredimage}"></div><div class="img-container-desktop-popup"><img class="desktop-image" src="${works[i].featuredimagepopup}"></div></div><div class="popup-desktop-format"><p class="works-paragraph">${works[i].detaileddescription}</p><div class="popup-desktop-format-2"><ul class="works-list-popup"><li><label class="list-buttons">${works[i].technologies[0]}</label></li><li><label class="list-buttons">${works[i].technologies[1]}</label></li><li><label class="list-buttons">${works[i].technologies[2]}</label></li></ul><div class="popup-divider"></div><div class="project-button-section"><a href="${works[i].linklive}"class="works-button-1">See Live <img src="./images/assets/See-livve-icon.png"></img><a href="${works[i].linksource}"class="works-button-1">See Source <img src="./images/assets/github-button.png"></img></div></div></div><div class="navigation-links"><a class="popup-links" id="previous" href="#">Previous Project</a><a class="popup-links" id="next" href="#">Next Project</a></div></div>`;
+  const worksgrid1 = document.getElementById('works-grid');
+  for (let j = 0; j < works.length; j += 1) {
+    const codeblock = `<div id="works-1"> <div class="img-container"><img src="${works[j].featuredimage}"></div><div class="img-container-desktop"><img class="desktop-image" src="${works[j].featuredimagedesktop}"></div> <div class="works-contents"> <h2 class="works-heading">${works[j].projectname}</h2> <div class="works-frame"> <label class="frame-text1">Canopy</label> <div class="frame-counter"><img src="images/Counter.png"></div><label class="frame-text2">Back End Dev</label><div class="frame-counter"><img src="images/Counter.png"></div><label class="frame-text2">2015</label></div><p class="works-paragraph">${works[j].projectdescription}</p><ul class="works-list"><li><label class="list-buttons">${works[j].technologies[0]}</label></li><li><label class="list-buttons">${works[j].technologies[1]}</label></li><li><label class="list-buttons">${works[j].technologies[2]}</label></li></ul><button id="project${j}"class="works-button">See Project</button></div></div>`;
+    worksgrid.innerHTML += codeblock;
+  }
+
+  for (let j = 0; j < works.length; j += 1) {
+    popupblock = `<div id="project-popup${j}" class="project-popup-inactive"><div id="container-exist" class="project-container"><div class="project-text-section"><div class="popup-heading"><h2 class="works-heading">${works[j].projectname}</h2><a href="#" class="popup-cancel" id="closeproject${j}"><img src="./images/assets/desktop-popup-cancel.png"></a></div><div class="works-frame"><label class="frame-text1">Canopy</label><div class="frame-counter"><img src="images/Counter.png"></div><label class="frame-text2">Back End Dev</label><div class="frame-counter"><img src="images/Counter.png"></div><label class="frame-text2">2015</label></div><div class="img-container"><img class ="mobile-popup-image" src="${works[j].featuredimage}"></div><div class="img-container-desktop-popup"><img class="desktop-image" src="${works[j].featuredimagepopup}"></div></div><div class="popup-desktop-format"><p class="works-paragraph">${works[j].detaileddescription}</p><div class="popup-desktop-format-2"><ul class="works-list-popup"><li><label class="list-buttons">${works[j].technologies[0]}</label></li><li><label class="list-buttons">${works[j].technologies[1]}</label></li><li><label class="list-buttons">${works[j].technologies[2]}</label></li></ul><div class="popup-divider"></div><div class="project-button-section"><a href="${works[j].linklive}"class="works-button-1">See Live <img src="./images/assets/See-livve-icon.png"></img><a href="${works[j].linksource}"class="works-button-1">See Source <img src="./images/assets/github-button.png"></img></div></div></div><div class="navigation-links"><a class="popup-links" id="previous${j}" href="#">Previous Project</a><a class="popup-links" id="next${j}" href="#">Next Project</a></div></div></div>`;
+    worksgrid1.innerHTML += popupblock;
+  }
+  const defaultnext = `#next${works.length - 1}`;
+  document.querySelector(defaultnext).classList.add('popup-links-disabled');
+  document.querySelector(defaultnext).classList.remove('popup-links');
+  document.querySelector('#previous0').classList.add('popup-links-disabled');
+  document.querySelector('#previous0').classList.remove('popup-links');
+  for (let j = 0; j < works.length; j += 1) {
+    const projectname = `#project${j}`;
+    let popupname = `#project-popup${j}`;
+    let closebutton = `#closeproject${j}`;
+    const nextbutton = `#next${j}`;
+    const previousbutton = `#previous${j}`;
+    document.querySelector(projectname).addEventListener('click', () => {
+      popupname = `#project-popup${projectname[8]}`;
+      document.querySelector(popupname).classList.add('project-popup');
+      document.querySelector(popupname).classList.remove('project-popup-inactive');
+    });
+    document.querySelector(closebutton).addEventListener('click', () => {
+      const prefix = nextbutton[5];
+      popupname = `#project-popup${prefix}`;
+      document.querySelector(popupname).classList.add('project-popup-inactive');
+      document.querySelector(popupname).classList.remove('project-popup');
+    });
+    document.querySelector(nextbutton).addEventListener('click', () => {
+      const prefix = nextbutton[5];
+      const prefix1 = Number(prefix) + 1;
+      popupname = `#project-popup${prefix}`;
+      document.querySelector(popupname).classList.add('project-popup-inactive');
+      document.querySelector(popupname).classList.remove('project-popup');
+      popupname = `#project-popup${prefix1}`;
+      document.querySelector(popupname).classList.add('project-popup');
+      document.querySelector(popupname).classList.remove('project-popup-inactive');
+    });
+    document.querySelector(previousbutton).addEventListener('click', () => {
+      const prefix = previousbutton[9];
+      const prefix1 = Number(prefix) - 1;
+      popupname = `#project-popup${prefix}`;
+      document.querySelector(popupname).classList.add('project-popup-inactive');
+      document.querySelector(popupname).classList.remove('project-popup');
+      popupname = `#project-popup${prefix1}`;
+      document.querySelector(popupname).classList.add('project-popup');
+      document.querySelector(popupname).classList.remove('project-popup-inactive');
+      closebutton = `#closeproject${prefix1}`;
+    });
+  }
+
+  const form = document.querySelector('#form');
+  form.addEventListener('submit', (e) => {
+    const email = document.querySelector('#emailfield').value; 
+    const validateemail = email.toLowerCase();
+    if ((email === validateemail)) {
+      document.querySelector('#failed').classList.add('validate-email-disabled');
+      document.querySelector('#failed').classList.remove('validate-email');
+      form.onSubmit();
+    } else {
+      document.querySelector('#failed').classList.add('validate-email');
+      document.querySelector('#failed').classList.remove('validate-email-disabled');
+      e.preventDefault();
+    }
   });
 });

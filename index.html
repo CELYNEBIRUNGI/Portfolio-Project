@@ -1,157 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title> My Portfolio Website</title>
+    <title>My Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   </head>
-  <body>
-    <div id="home-page">  
-      <header class="header">
+
+  <body id="body">
+  <div id="home-page">  
+    <header class="header">
         <a href="#" class="logo">My Logo</a>
         <nav id="nav-hamburger">
-          <a href="#" id="hamburger"><img src="images/nav.png"></a>
-          <div i d="mobilemenu" class="mobile-menu-inactive">
-            <div class="disabled-button"><a href="#"><img src="images/hamburger disable.png"></a></div>
-            <ul class="mobile-menu-list">
-              <li><a id="button1" class="mobile-menu-links" href="#main">Portfolio</a></li>
-              <li><a id="button2" class="mobile-menu-links" href="#about-myself">About</a></li>
-              <li><a id="button3" class="mobile-menu-links" href="#form">Contact</a></li>
-            </ul>
-          </div>        
+            <a href="#" id="hamburger"><img src="images/hamburger.png"></a>
+            <div id="mobilemenu" class="mobile-menu-inactive">
+              <div class="disabled-button"><a href="#"><img src="./images/hamburger disable.png"></a></div>
+                <ul class="mobile-menu-list">
+                  <li><a id="button1" class="mobile-menu-links" href="#main">Portfolio</a></li>
+                  <li><a id="button2" class="mobile-menu-links" href="#about-myself">About</a></li>
+                  <li><a id="button3" class="mobile-menu-links" href="#form">Contact</a></li>
+                </ul>
+            </div>        
         </nav>
-          <nav id="desktop-nav">
+        <nav id="desktop-nav">
           <a href="#main" class="desktop-nav-link">Portfolio</a>
           <a href="#about-myself" class="desktop-nav-link">About</a>
           <a href="#form" class="desktop-nav-link">Contact</a>
         </nav>
-      </header>
-      <section id="main">
-        <div>
-        <h2><span class="main-heading">I'm Celyne.<br>Glad to See you!</span></h2>
-        <p class="main-paragraph">I'm a software developer! I can help you build a product, feature or website Look through
-               some of my work and experience! If you like what you see and have 
-               a project you need coded, don't hesitate to contact me.</p>
+    </header>
+    <section id="main">
+        <h1 class="main-heading">Celyne<br> Glad to see you!</h1>
+        <p class="main-paragraph">I'm a software developer! I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hesitate to contact me.</p>
         <label class="connect">LET'S CONNECT</label>
-              </div>
-       <div id="socials">
-          <ul class="social-media-list">
-        <li><a href="#" class="icons"><img src="images/assets/twitter.png"></a></li>
-        <li><a href="#" class="icons"><img src="images/assets/Linkedin.png"></a></li>
-        <li><a href="#" class="icons"><img src="images/assets/M.png"></a></li>
-        <li><a href="#" class="icons"><img src="images/assets/github.png"></a></li>
-        <li><a href="#" class="icons"><img src="images/assets/hi 5.png"></a></li>
-          </ul><br>
-          </div>
-        </section>
+      <div id="socials">
+        <ul class="social-media-list">
+          <li><a href="#" class="icons"><img src="images/assets/twitter.png"></a></li>
+          <li><a href="#" class="icons"><img src="images/assets/Linkedin.png"></a></li>
+          <li><a href="#" class="icons"><img src="/images/assets/M.png"></a></li>
+          <li><a href="#" class="icons"><img src="images/assets/github.png"></a></li>
+          <li><a href="#" class="icons"><img src="/images/assets/5.png"></a></li>
+        </ul><br>
+        </div>
+      </section>
     </div>
-    <div id="works-grid">
-     <div id="works-1">
-        <div class="img-container"><img src="images/Snapshoot.png"></div>
-        <div class="img-container-desktop"><img class="desktop-image" src="images/Snapshoot-Desktop1.png" alt=""></div>
-        <div class="works-contents">
-          <h2 class="works-heading">Tonic</h2>
-          <div class="works-frame">
-      <label class="frame-text1">CANOPY</label>
-    <div class="frame-counter"><img src="images/Counter.png"></div>
-    <label class="frame-text2">Back End Dev</label>
-    <div class="frame-counter"><img src="images/Counter.png"></div>
-    <label class="frame-text2">2015</label>
-    </div>
-          <p class="works-paragraph">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-          <ul class="works-list">
-      <li><label class="list-buttons">HTML</label></li>
-      <li><label class="list-buttons">ruby on rails</label></li>
-      <li><label class="list-buttons">CSS</label></li>
-      <li><label class="list-buttons">JAVASCRIPT</label></li>
-          </ul>
-          
-          <div class="d-grid gap-2 d-md-block">
-            <button class="works-button" type="button">See project</button>
-          </div>
-          
-        </div>
-      </div>
-      <div id="works-1">
-        <div class="img-container"><img src="images/Snapshoot2.png"></div>
-        <div class="img-container-dp"><img class="desktop-image" src="images/muilti.png"></div>
-        <div class="works-contents">
-          <h2 class="works-heading">Multi-Post Stories</h2>
-          <div class="works-frame">
-            <label class="frame-text1">FACEBOOK</label>
-            <div class="frame-counter"><img src="images/Counter.png"></div>
-            <label class="frame-text2">full stack dev</label>
-            <div class="frame-counter"><img src="images/Counter.png"></div>
-            <label class="frame-text2">2015</label>
-          </div>
-          <p class="works-paragraph">Experimental content creation feature that allows users to 
-            add to an existing story over the
-             course of a day without spamming their friends.</p>
-          <ul class="works-list">
-            <li><label class="list-buttons">html</label></li>
-            <li><label class="list-buttons">ruby on rails</label></li>
-            <li><label class="list-buttons">css</label></li>
-            <li><label class="list-buttons">Javascript</label></li>
-          </ul>
-          <div class="d-grid gap-2 d-md-block">
-            <button class="works-button" type="button">See project</button>
-          </div>
-        </div>
-      </div>
-      <div id="works-1">
-        <div class="img-container"><img src="images/Snapshoot3.png"></div>
-        <div class="img-container-desktop"><img class="desktop-image" src="images/Snapshoot.png"></div>
-        <div class="works-contents">
-          <h2 class="works-heading">FACEBOOK360</h2>
-          <div class="works-frame">
-            <label class="frame-text1">FACEBOOK</label>
-            <div class="frame-counter"><img src="images/Counter.png"></div>
-            <label class="frame-text2">Full stack dev</label>
-            <div class="frame-counter"><img src="images/Counter.png"></div>
-            <label class="frame-text2">2015</label>
-          </div>
-          <p class="works-paragraph">Exploring the future of media in Facebook's first Virtual Reality app; a 
-            place to discover and enjoy 360 photos and videos on Gear VR.</p>
-          <ul class="works-list">
-            <li><label class="list-buttons">html</label></li>
-            <li><label class="list-buttons">ruby on rails</label></li>
-            <li><label class="list-buttons">css</label></li>
-            <li><label class="list-buttons">Javascript</label></li>
-          </ul>
-          <div class="d-grid gap-2 d-md-block">
-            <button class="facebook-button" type="button">See project</button>
-          </div>
-        </div>
-      </div>
-      <div id="works-1">
-        <div class="img-container"><img src="images/Snapshoot4.png"></div>
-        <div class="img-container-dp"><img class="desktop-image" src="images/Snapshoot2.png"></div>
-        <div class="works-contents">
-          <h2 class="works-heading">Uber  Navigation</h2>
-          <div class="works-frame">
-            <label class="frame-text1">Uber</label>
-            <div class="frame-counter"><img src="images/Counter.png"></div>
-            <label class="frame-text2">Lead Developer</label>
-            <div class="frame-counter"><img src="images/Counter.png"></div>
-            <label class="frame-text2">2018</label>
-          </div>
-          <p class="works-paragraph">A smart assistant to make driving more safe, efficient, and fun by unlocking
-             your most expensive computer: your car.</p>
-          <ul class="works-list">
-            <li><label class="list-buttons">html</label></li>
-            <li><label class="list-buttons">ruby on rails</label></li>
-            <li><label class="list-buttons">css</label></li>
-            <li><label class="list-buttons">Javascript</label></li>
-          </ul>
-          <div class="d-grid gap-2 col-6 mx-auto">
-            <button class="works-button" type="button">See Project</button>
-        </div>
+    <div id="works-grid">  
       </div>
     </div>
-  </section>
     <section id="about-myself">
       <div class="inner-container">
         <h2 class="heading-about">About Myself</h2>
@@ -161,14 +56,12 @@
           <ul class="social-media-list">
             <li><a href="#" class="icons"><img src="images/assets/github.png"></a></li>
             <li><a href="#" class="icons"><img src="images/assets/Linkedin.png"></a></li>
-            <li><a href="#" class="icons"><img src="images/assets/hi 5.png"></a></li>
+            <li><a href="#" class="icons"><img src="/images/assets/5.png"></a></li>
             <li><a href="#" class="icons"><img src="images/assets/twitter.png"></a></li>            
             <li><a href="#" class="icons"><img src="images/assets/M.png"></a></li>
           </ul><br>
         </div>
-        <div class="d-grid gap-2 d-md-block">
-          <button class="about-button" type="button">See project</button>
-        </div>
+        <button class="about-button">Get my resume</button>
       </div>
       <div class="about-languages">
         <ul id="language-list">
@@ -204,26 +97,21 @@
         </ul>
       </div>
     </section>
-    
-    <!-- Section by Sandeep (mailsg0912@gmail.com)-->
-
     <footer class="footer">
       <section class="footer-container">
         <h2 class="footer-heading">Contact me</h2>
-        <p class="footer-paragraph">If you have an application you <br>are interested in developing, a<br> feature that you need built or a<br> project that needs coding.<br> I'd love to help with it!</p>
+        <p class="footer-paragraph">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it!</p>
         <form id="form" action="https://formspree.io/f/moqzkvvq" method="POST">
-          <input id="name" class="fields1" type="text" name="user_name" minlength="4" maxlength="30" placeholder="Name " required/>
-          <input class="email-box" type="email" name="email" placeholder="loremipsum@gmail.com" required>
-          <textarea id="textfield" class="fields2" maxlength="500" rows="5" cols="40"  name="message" form="form" placeholder ="Write your message here..." required></textarea>
-          <button class="form-button" type="submit">Get in touch</button>
+          <input class="fields1" type="text" name="user_name" minlength="4" maxlength="30" placeholder="Lorem Ipsum" required/>
+          <input id="emailfield" class="fields1" type="email" name="user_email" placeholder="loremipsum@gmail.com" required/>
+          <textarea class="fields2" maxlength="500" rows="5" cols="40" name="message" placeholder="Write your message here..." form="form"></textarea>
+          <button id="submitform" class="form-button" type="submit">Get in touch</button><br>
+          <div id="failed" class="validate-email-disabled">Error, Form is not sent: Upper-Case not allowed in email</div>
         </form>
-
-      
+        <div class="bottom-divider"></div>
       </section>
-    </footer> 
-    <div class="bottom-divider"></div>   
-  </div>
-  <script src="./js/main.js"></script>
-
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
